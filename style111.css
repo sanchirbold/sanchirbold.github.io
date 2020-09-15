@@ -1,0 +1,149 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #6b6c6e;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+a {
+    background-color: transparent;
+}
+.{	
+	width: 100%;
+	height: 40%;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    background: none;
+    line-height: 1.5em;
+}
+.menu{
+	
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:0;
+	margin-left:0;
+	padding: 0;
+	background-color: #168;
+}
+.menu .container{
+	
+}
+
+.menu .container ul{
+	
+	margin: 0;
+	padding: 0;
+}
+.menu .container ul li{
+	background-color: #168;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.menu .container ul li a{
+	color: #fff;
+    font-size: 11.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    transition: all 0.3s ease-out;
+    font-family: Roboto Condensed, sans-serif;
+    display: block;
+    position: relative;
+    line-height: 1.5;
+}
+.menu .container ul li a:hover{
+	text-decoration: none;
+    cursor: pointer;
+    background-color: #000;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: a+++++++++++++++++++++++++++++++++ll .3s ease;
+}
+.container .content{
+	width: 100%;
+	height: 35%;
+    background-color:black;
+    margin-top:20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+#san{
+	width:100%;
+	height: 30%;
+}
+.contact{
+	height: 45%;
+	width: 100%;
+}
+.contact ul li a{
+	font-size: 45px;
+		display: inline-block;
+		color: #02f
+		
+}
+.aboutMe {
+	height: 100%;
+	width: 100%;
+}
+.aboutMe ul li{
+	color: #02f;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    transition: all 0.3s ease-out;
+    font-family: Roboto Condensed, sans-serif;
+    display: block;
+    position: relative;
+    line-height: 1.5;
+}       
+#div{
+	height: 50%;
+	width: 100%;
+}
+button{
+	margin: 5px 0 ;
+	background-color : #168;
+	font-size : 12px;
+}
+input{
+	background-color : #168;
+}
+#enetheg{
+	width: 100%;
+	height: 90%;
+}
+#sant{
+	width: 100%;
+	height: 90%;
+}
