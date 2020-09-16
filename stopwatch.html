@@ -1,0 +1,111 @@
+<style>
+#lap{
+	margin: 30px 30px;
+	float: right;
+	font-size: 5px;
+}
+#myM{
+	padding: 0 50px;
+	margin : 50px 500px;
+	background-color: green;
+	width: 360px;
+	height: 300px;
+}
+p{
+	font-size: 70px;
+	width: 230px;
+	background-color: green;
+}
+div{
+	width: 190px;
+	height: 50px;
+	font-size: 80px;
+	margin : 40px 0;
+}
+button{
+	width: 100px;
+	height: 50px;
+	font-size: 30px;
+	float : left;
+	margin: 5px 10px;
+	background-color: purple;
+}
+</style>
+<div id="myM">
+<p>StopWatch</p>
+<div id="myN">00:00:00</div>
+<button id="myA" onclick="stop()">Start</button>
+<button onclick="reset()">Reset</button>
+<button id="sainuu" onclick="lap()" disabled>Lap</button>
+<div id="lap"></div>
+</div>
+<script>
+	var tsag = document.getElementById("myN")
+	var doil = 0
+	var second = 0
+	var minut = 0
+	var delgetsMinut = 0
+	var delgetsSecond = 0 
+	var paused = true
+	var intervalId
+	var startStop = document.getElementById("myA")
+	var toirog = document.getElementById("lap")
+	var toirogToo = 1
+	var lapButton = document.getElementById("sainuu")
+	function stop(){
+	if(paused){
+		startStop.innerHTML = "Stop"
+		intervalId = setInterval(hello,10) 
+		lapButton.disabled = false
+	}
+	else{
+		startStop.innerHTML = "Start" 
+		clearInterval(intervalId)
+		lapButton.disabled = true
+	}
+			paused = !paused
+	}
+	function hello(){
+	doil++
+	if(doil == 100){
+	second++
+	doil=0
+	}
+	else if(second == 60){
+	minut++
+	second = 0
+	}
+	if(second<10){
+	delgetsSecond = "0"+second
+	}
+	else{
+	delgetsSecond = second
+	}
+	if(minut<10){
+	delgetsMinut= "0"+minut
+	}
+	else{
+	delgetsMinut = minut
+	}
+	tsag.innerHTML = delgetsMinut+":"+delgetsSecond+":"+doil
+	}
+	function reset(){
+		tsag.innerHTML = "00:00:00"
+		doil = 0
+		second = 0
+		minut = 0
+		if(!paused){
+			stop()
+		}
+		toirog.innerHTML = ""
+		toirogToo = 1
+	}
+	function lap(){
+		var lapNumber = document.createElement("div")
+		var lapTime = document.createElement("div")
+		lapNumber.innerHTML = toirogToo
+		lapTime.innerHTML =  delgetsMinut+":"+delgetsSecond+":"+doil
+		toirog.append(lapNumber,lapTime)
+		toirogToo++
+	}
+</script>

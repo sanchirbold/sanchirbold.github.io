@@ -1,0 +1,48 @@
+<html>
+<head>
+<link rel="stylesheet" href="style111.css">
+</head>
+<body>
+<img id="san" src="https://p0.pikist.com/photos/144/681/landscape-panorama-night-view-light-the-capital-of-mongolia-ulaanbaatar-mongolia.jpg">
+<div class="menu">
+<div class="container">
+	<ul>
+	<li><a href="taniltsuulah.html">About me</a></li>
+	<li><a href="stopwatch.html">Stop watch</a></li>
+	<li><a href="daalgavar1.html">Slide show</a></li>
+	<li><a href="divvisibility.html">Div visibility</a></li>
+	<li><a href="backgroundcolor.html">Background color changer</a></li>
+	<li><a href="note.html">Todo</a></li>
+	<li><a href="login.html">Login</a></li>
+	<li><a href="new.html">Gif search</a></li>
+	<li><a href="countdown.html">Countdown timer</a></li>
+	<li><a href="calculator.html">Calculator</a></li>
+	<li><a href="#">Contact</a></li>
+	</ul>
+</div>
+</div>
+<div class="contact">
+<ul>
+	<li><a>Contact : 95962965 , 99482965</a></li>
+	<li><a>Address : KhUD 19-r Khoroo UB town 81-r bair 3 davkhart 304 toot</a></li>
+	<li><a>Email : sanchirbold0@gmail.com</a></li>
+	<li><a href="https://www.facebook.com/sanchir.sancilhirbold">Facebook : Sanchir Sanchirbold</a></li>
+	<li><a href="https://www.instagram.com/sanchirbold_30/?hl=en">Instagram : Sanchirbold_30</a></li>
+</ul>
+</div>
+<script>
+var myImg = ["https://p0.pikist.com/photos/144/681/landscape-panorama-night-view-light-the-capital-of-mongolia-ulaanbaatar-mongolia.jpg","https://img.freepik.com/free-photo/panorama-view-beautiful-sunrise-landscape-forest_41898-467.jpg?size=626&ext=jpg","https://p1.pxfuel.com/preview/985/685/237/landscape-panorama-plains-lake-blue-sky-fax-the-northwest-part.jpg"]
+var x = 0
+var imageElements = document.querySelector("img")
+function myFunction(){
+		imageElements.src = myImg[x]
+		x++
+		if( x == myImg.length){
+		x = 0
+		}
+}
+var intervalId = setInterval(myFunction,2000)
+</script>
+</body>
+
+</html>

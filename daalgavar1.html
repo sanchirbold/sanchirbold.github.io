@@ -1,0 +1,26 @@
+<button onclick="playpause()">click here</button>
+<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" width="250px" height="250px">
+<script>
+var myImg = ["https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQ5QkDnLrH5Y2y6_xzwOelXLFDBHCDWulXbg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTpnxobUE0f5drTw5YnblRL8JFlSOmAc1YvOg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-AoTuFZ3RgoRWJUpW2E-kmmKv9701AdcwxQ&usqp=CAU"]
+var x = 0
+var imageElements = document.querySelector("img")
+var paused = false
+function myFunction(){
+		imageElements.src = myImg[x]
+		x++
+		if( x == myImg.length){
+		x = 0
+		}
+}
+function playpause(){
+if(!paused){
+		clearInterval(intervalId)
+		}
+		else{
+		intervalId = setInterval(myFunction,1000)
+		}
+		paused = !paused
+}
+
+var intervalId = setInterval(myFunction,1000)
+</script>

@@ -1,0 +1,48 @@
+<html>
+<head>
+	<style>
+	div{
+		background-color: blue;
+		height:100px;
+		width:100px;
+		float:left;
+		margin:0 10px;
+	}
+	</style>
+</head>
+<body>
+	<div id="myN"></div>
+	<div id="myA"></div>
+	<div id="myM"></div>
+	<button onclick="domFunction()">click</button>
+	<script>
+		var x = 0
+		function domFunction(){
+			if(x == 0){
+			document.getElementById("myM").style.visibility="visible"
+			document.getElementById("myN").style.visibility="hidden"
+			}
+			else if(x == 1){
+			document.getElementById("myN").style.visibility="visible"
+			document.getElementById("myA").style.visibility="hidden"
+			}
+			else if(x == 2){
+			document.getElementById("myA").style.visibility="visible"
+			document.getElementById("myM").style.visibility="hidden"
+			}
+			else if(x ==3 ){
+			document.getElementById("myN").style.visibility="visible"
+			document.getElementById("myA").style.visibility="visible"
+			document.getElementById("myM").style.visibility="visible"
+			}
+			else if(x == 4){
+			document.getElementById("myN").style.visibility="hidden"
+			document.getElementById("myA").style.visibility="hidden"
+			document.getElementById("myM").style.visibility="hidden"
+			x = -1
+			}
+			x++
+		}
+	</script>
+</body>
+</html>

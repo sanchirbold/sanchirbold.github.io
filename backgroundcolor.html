@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <button onclick="unguSolih()">Ungu Solih</button>
+    <input type="text" id="colorInput">
+    <button onclick="unguNemeh()">Ungu Nemeh</button>
+      <script>
+            var MyColors=["red","green","blue","black","aqua"]
+            var count = 0
+            var colorInput = document.getElementById("colorInput")
+            setInterval(unguSolih,1000)
+            document.body(unguSolih)
+            function unguSolih(){
+            document.body.style.backgroundColor = MyColors[count]
+            count++
+            if(count == MyColors.length){
+            count = 0
+            }
+            }
+            function unguNemeh(){
+            MyColors.push(colorInput.value)
+            count = MyColors.length - 1
+            unguSolih()
+            colorInput.value = ""
+            }
+      </script>
+</body>
+</html>
